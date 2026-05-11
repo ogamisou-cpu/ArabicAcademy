@@ -1,109 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Arabic Academy</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <!-- HEADER -->
+
+  <!-- HEADER -->
   <header>
     <div class="container">
-      <div class="logo">Academia de Idiomas</div>
 
-      <!-- MENU -->
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Cursos</a></li>
-          <li><a href="#">Idiomas</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+      <div class="logo">
+        Arabic Academy
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="active" className="home"><a href="#">Home</a></li>
+          <li className="courses"><a href="#courses">Courses</a></li>
+          <li className="services"><a href="#Services">Services</a></li>
+          <li className="why-us"><a href="#why-us">Why Us</a></li>
+          <li className="testimonials"><a href="#testimonials">Reviews</a></li>
+          <li className="contact"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
   <!-- HERO -->
-  <div class="hero">
-    <div>
-      <h1>Aprende Idiomas Fácilmente</h1>
-      <p>Inglés, Francés, Español, Alemán y más</p>
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Learn Arabic Online With Expert Teachers</h1>
+
+      <p class="hero-text">
+        Join our academy and start speaking Arabic with interactive online classes,
+        professional tutors, and flexible schedules.
+      </p>
+
+      <a href="#contact" class="hero-btn">
+        Start Learning
+      </a>
+
     </div>
+
+  </section>
+
+    <!-- STATS -->
+<section class="stats">
+
+  <div class="container stats-container">
+
+    <div class="stat-card">
+      <h3>500+</h3>
+      <p>Students</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>20+</h3>
+      <p>Teachers</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>15+</h3>
+      <p>Countries</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>10+</h3>
+      <p>Courses</p>
+    </div>
+
   </div>
 
-  <!-- CURSOS -->
-  <section>
+</section>
+
+  <!-- COURSES -->
+  <section id="courses">
+
     <div class="container">
-      <h2>Nuestros Cursos</h2>
+
+      <h2>Our Courses</h2>
 
       <div class="cards">
 
         <div class="card">
-          <h3>Inglés</h3>
-          <p>Aprende inglés desde nivel básico hasta avanzado.</p>
+          <h3>Beginner Arabic</h3>
+
+          <p>
+            Learn the Arabic alphabet, pronunciation,
+            grammar, and daily conversation basics.
+          </p>
         </div>
 
         <div class="card">
-          <h3>Francés</h3>
-          <p>Mejora tu pronunciación y gramática francesa.</p>
+          <h3>Business Arabic</h3>
+
+          <p>
+            Improve your Arabic communication for work,
+            business meetings, and professional situations.
+          </p>
         </div>
 
         <div class="card">
-          <h3>Alemán</h3>
-          <p>Curso completo de alemán para estudiantes y profesionales.</p>
+          <h3>Quranic Arabic</h3>
+
+          <p>
+            Understand Quranic vocabulary and improve your
+            reading and comprehension skills.
+          </p>
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <div class="container">
-      <div class="contacto">
-        <h2>Contacto</h2>
+  <!-- WHY US -->
+  <section id="why-us" class="why-us">
 
-        <form>
-          <input type="text" placeholder="Tu nombre" required>
-          <input type="email" placeholder="Tu correo" required>
-          <textarea rows="5" placeholder="Tu mensaje"></textarea>
-          <button type="submit">Enviar Mensaje</button>
-        </form>
+    <div class="container">
+
+      <h2>Why Choose Arabic Academy?</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Live Online Classes</h3>
+
+          <p>
+            Learn directly with experienced Arabic teachers
+            through interactive online lessons.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Flexible Schedule</h3>
+
+          <p>
+            Study from anywhere and choose class times
+            that match your routine.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Certificates</h3>
+
+          <p>
+            Receive a certificate after successfully
+            completing your course.
+          </p>
+        </div>
 
       </div>
+
     </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+
+    <div class="container">
+
+      <h2>What Our Students Say</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <p>
+            "Amazing teachers and very organized lessons.
+            I can finally speak Arabic confidently."
+          </p>
+
+          <h4>- Sarah</h4>
+        </div>
+
+        <div class="card">
+          <p>
+            "Professional academy with friendly tutors.
+            The online classes are very interactive."
+          </p>
+
+          <h4>- Ahmed</h4>
+        </div>
+
+        <div class="card">
+          <p>
+            "I improved my Arabic reading skills in just
+            a few months. Highly recommended."
+          </p>
+
+          <h4>- Maria</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+
+    <div class="container">
+
+      <h2>Our Online Classes</h2>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Students learning">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Ready To Start Learning Arabic?</h2>
+
+      <p>
+        Join hundreds of students learning Arabic online today.
+      </p>
+
+      <a href="#contact" class="hero-btn">
+        Join Now
+      </a>
+
+    </div>
+
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-
-      <div class="footer-content">
-
-        <div>
-          <h3>Academia de Idiomas</h3>
-          <p>Aprende idiomas modernos con profesores expertos.</p>
-        </div>
-
-        <div class="footer-links">
-          <h3>Enlaces</h3>
-
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- BRAND -->
+      <div class="footer-brand">
+        <h2>Arabic Academy</h2>
+        <p>
+          Learn Arabic online with expert teachers,
+          interactive lessons, and flexible schedules.
+        </p>
       </div>
 
-      <div class="copyright">
-        <p>© 2026 Academia de Idiomas - Todos los derechos reservados</p>
+      <!-- LINKS -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
 
+      <!-- CONTACT -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: info@arabicacademy.com</p>
+        <p>Phone: +34 600 000 000</p>
+        <p>Online Classes Worldwide</p>
+      </div>
     </div>
-  </footer>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <p>
+        © 2026 Arabic Academy — All Rights Reserved
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
 </body>
 </html>
