@@ -1,16 +1,174 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicios de Idioma Árabe</title>
+
     <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
         body{
-            background-color: aquamarine;
+            background:#f5f7fa;
+            color: #222
+
+            
+            url('img/arabe-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color:rgb(46, 10, 190);
+        }
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{
+            font-size:50px;
+            margin-bottom:15px;
+            color: rgb(53, 5, 244);
+
+        }
+
+        header p{
+            font-size:20px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.12);
+            border-radius:15px;
+            overflow:hidden;
+            backdrop-filter: blur(6px);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card-content h2{
+            margin-bottom:10px;
+            color:blue;
+            text-align: center;
+        }
+
+        .video-section{
+            margin-top:60px;
+            text-align:center;
+        }
+
+        .video-section h2{
+            margin-bottom:20px;
+            font-size:35px;
+            color:#0f04dd;
+        }
+
+        iframe{
+            width:100%;
+            max-width:800px;
+            height:450px;
+            border:none;
+            border-radius:15px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:rgba(0,0,0,0.6);
+            margin-top:40px;
         }
     </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Servicios de Idioma Árabe</h1>
+        <p>Aprende árabe online con cursos modernos y profesores expertos</p>
+    </header>
+
+    <section class="container">
+
+        <div class="services">
+
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/f6/be/47/f6be47dc0c4bb244f006ee6c627bce02.jpg" alt="Curso de Árabe">
+                <div class="card-content">
+                    <h2>Curso Básico</h2>
+                    <p>Aprende el alfabeto árabe, pronunciación y expresiones básicas.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://resala-academy.com/wp-content/uploads/2023/04/Arabic-Course-Online-BG-1.jpg" alt="Profesor Árabe">
+                <div class="card-content">
+                    <h2>Clases Online</h2>
+                    <p>Clases en vivo con profesores nativos y materiales interactivos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/688391228/es/vector/plantilla-de-desintegraci%C3%B3n-de-marruecos.jpg?s=612x612&w=0&k=20&c=upbrVPpFeX_4sNDE6QcizUUrJ7Jq8HPwdGor6rp6pZ4=" alt="Cultura Árabe">
+                <div class="card-content">
+                    <h2>Cultura Árabe</h2>
+                    <p>Descubre la cultura, tradiciones y comunicación árabe moderna.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="video-section">
+            <h2>Video de Introducción</h2>
+
+            <iframe
+                src="https://www.youtube.com/embed/2RcgfyuBlz8"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Cursos de Idioma Árabe</p>
+    </footer>
+
 </body>
 </html>
+```
+
+## Images à ajouter dans le dossier `img`
+
+* arabe-bg.jpg
+* curso-arabe.jpg
+* profesor-arabe.jpg
+* cultura-arabe.jpg
