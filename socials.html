@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Redes Mini</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        background: #0f172a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Arial;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .card {
+        width: 60px;
+        height: 70px;
+        background: white;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+      }
+
+      .icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        margin-bottom: 3px;
+      }
+
+      /* Colors */
+      .facebook {
+        background: #1877f2;
+      }
+      .instagram {
+        background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+      }
+      .youtube {
+        background: #ff0000;
+      }
+      .tiktok {
+        background: #000;
+      }
+      .twitter {
+        background: #1da1f2;
+      }
+      .linkedin {
+        background: #0077b5;
+      }
+      .telegram {
+        background: #229ed9;
+      }
+      .whatsapp {
+        background: #25d366;
+      }
+      .snapchat {
+        background: #fffc00;
+        color: black;
+      }
+      .discord {
+        background: #5865f2;
+      }
+
+      h3 {
+        font-size: 8px;
+        margin: 0;
+      }
+
+      a {
+        font-size: 8px;
+        text-decoration: none;
+        background: #16a34a;
+        color: white;
+        padding: 2px 4px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="icon facebook"><i class="fab fa-facebook-f"></i></div>
+        <h3>FB</h3>
+        <a href="https://facebook.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon instagram"><i class="fab fa-instagram"></i></div>
+        <h3>IG</h3>
+        <a href="https://instagram.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon youtube"><i class="fab fa-youtube"></i></div>
+        <h3>YT</h3>
+        <a href="https://youtube.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon tiktok"><i class="fab fa-tiktok"></i></div>
+        <h3>TT</h3>
+        <a href="https://tiktok.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon twitter"><i class="fab fa-x-twitter"></i></div>
+        <h3>X</h3>
+        <a href="https://x.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+        <h3>IN</h3>
+        <a href="https://linkedin.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon telegram"><i class="fab fa-telegram-plane"></i></div>
+        <h3>TG</h3>
+        <a href="https://telegram.org" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+        <h3>WA</h3>
+        <a href="https://whatsapp.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon snapchat"><i class="fab fa-snapchat-ghost"></i></div>
+        <h3>SC</h3>
+        <a href="https://snapchat.com" target="_blank">OK</a>
+      </div>
+
+      <div class="card">
+        <div class="icon discord"><i class="fab fa-discord"></i></div>
+        <h3>DC</h3>
+        <a href="https://discord.com" target="_blank">OK</a>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", () => {
+          card.style.transform = "scale(0.85)";
+          setTimeout(() => (card.style.transform = "scale(1)"), 150);
+        });
+      });
+    </script>
+  </body>
+</html>

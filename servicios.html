@@ -1,174 +1,360 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios de Idioma Árabe</title>
-
+    <link rel="stylesheet" href="style.css" />
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f5f7fa;
+        color: #222 url("img/arabe-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: rgb(46, 10, 190);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 10px 0;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 15px;
+        overflow: hidden;
+        backdrop-filter: blur(6px);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .card-content h2 {
+        margin-bottom: 10px;
+        color: blue;
+        text-align: center;
+      }
+
+      .video-section {
+        margin-top: 60px;
+        text-align: center;
+      }
+
+      .video-section h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+        color: #0f04dd;
+      }
+
+      iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border: none;
+        border-radius: 15px;
+      }
+
+      /* FOOTER */
+      .footer {
+        background: #0f172a;
+        color: white;
+        padding: 50px 0 15px;
+        margin-top: 50px;
+      }
+
+      /* FOOTER CONTENT */
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
+
+      /* SECTIONS */
+      .footer-brand,
+      .footer-links,
+      .footer-contact {
+        flex: 1;
+        min-width: 220px;
+      }
+
+      /* BRAND TITLE */
+      .footer-brand h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #60a5fa;
+      }
+
+      /* TEXT */
+      .footer-brand p,
+      .footer-contact p,
+      .footer-links a {
+        color: #cbd5e1;
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      /* SECTION TITLES */
+      .footer-links h3,
+      .footer-contact h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+
+      /* LINKS */
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #60a5fa;
+      }
+
+      /* FOOTER BOTTOM */
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: 15px;
+        text-align: center;
+      }
+
+      .footer-bottom p {
+        color: #94a3b8;
+        font-size: 14px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .footer {
+          text-align: center;
         }
 
-        body{
-            background:#f5f7fa;
-            color: #222
-
-            
-            url('img/arabe-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color:rgb(46, 10, 190);
+        .footer-content {
+          gap: 30px;
         }
-
-        header{
-            text-align:center;
-            padding:60px 20px;
-        }
-
-        header h1{
-            font-size:50px;
-            margin-bottom:15px;
-            color: rgb(53, 5, 244);
-
-        }
-
-        header p{
-            font-size:20px;
-        }
-
-        .container{
-            width:90%;
-            max-width:1200px;
-            margin:auto;
-            padding:40px 0;
-        }
-
-        .services{
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-            gap:25px;
-        }
-
-        .card{
-            background:rgba(255,255,255,0.12);
-            border-radius:15px;
-            overflow:hidden;
-            backdrop-filter: blur(6px);
-            transition:0.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-10px);
-        }
-
-        .card img{
-            width:100%;
-            height:220px;
-            object-fit:cover;
-        }
-
-        .card-content{
-            padding:20px;
-        }
-
-        .card-content h2{
-            margin-bottom:10px;
-            color:blue;
-            text-align: center;
-        }
-
-        .video-section{
-            margin-top:60px;
-            text-align:center;
-        }
-
-        .video-section h2{
-            margin-bottom:20px;
-            font-size:35px;
-            color:#0f04dd;
-        }
-
-        iframe{
-            width:100%;
-            max-width:800px;
-            height:450px;
-            border:none;
-            border-radius:15px;
-        }
-
-        footer{
-            text-align:center;
-            padding:20px;
-            background:rgba(0,0,0,0.6);
-            margin-top:40px;
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
+    <!-- HEADER -->
     <header>
-        <h1>Servicios de Idioma Árabe</h1>
-        <p>Aprende árabe online con cursos modernos y profesores expertos</p>
+      <div class="container">
+        <div class="logo">Arabic Academy</div>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li class="active" className="home">
+              <a href="index.html">Home</a>
+            </li>
+            <li className="services"><a href="servicios.html">Services</a></li>
+            <li className="contact"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <h1>Servicios de Idioma Árabe</h1>
+    <p>Aprende árabe online con cursos modernos y profesores expertos</p>
+
     <section class="container">
-
-        <div class="services">
-
-            <div class="card">
-                <img src="https://i.pinimg.com/474x/f6/be/47/f6be47dc0c4bb244f006ee6c627bce02.jpg" alt="Curso de Árabe">
-                <div class="card-content">
-                    <h2>Curso Básico</h2>
-                    <p>Aprende el alfabeto árabe, pronunciación y expresiones básicas.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://resala-academy.com/wp-content/uploads/2023/04/Arabic-Course-Online-BG-1.jpg" alt="Profesor Árabe">
-                <div class="card-content">
-                    <h2>Clases Online</h2>
-                    <p>Clases en vivo con profesores nativos y materiales interactivos.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://media.istockphoto.com/id/688391228/es/vector/plantilla-de-desintegraci%C3%B3n-de-marruecos.jpg?s=612x612&w=0&k=20&c=upbrVPpFeX_4sNDE6QcizUUrJ7Jq8HPwdGor6rp6pZ4=" alt="Cultura Árabe">
-                <div class="card-content">
-                    <h2>Cultura Árabe</h2>
-                    <p>Descubre la cultura, tradiciones y comunicación árabe moderna.</p>
-                </div>
-            </div>
-
+      <div class="services">
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/474x/f6/be/47/f6be47dc0c4bb244f006ee6c627bce02.jpg"
+            alt="Curso de Árabe"
+          />
+          <div class="card-content">
+            <h2>Curso Básico</h2>
+            <p>
+              Aprende el alfabeto árabe, pronunciación y expresiones
+              básicas.👉<a
+                href="https://www.tumaster.com/tuscursos/cursos_y_cursos_fp-t2/?campaignid=1864643972&adgroupid=71633567922&matchtype=p&network=g&device=c&devicemodel=&keyword=cursos+en+donostia&creative=553324933606&adposition=&placement=&clase2=sinfiltroprecio&gad_source=1&gad_campaignid=1864643972&gbraid=0AAAAAD6kCGl7CXJatAYh6KOCoE4pSUiq7&gclid=CjwKCAjwn4vQBhBsEiwAq3hhN6Pd3b8Z3YpXhjXqZhMDCnMT8LcWNJD1KDoVkh7KxdsGdilchopU8RoC8OIQAvD_BwE#/modalidades"
+              >
+                Here</a
+              >
+            </p>
+          </div>
         </div>
 
-        <div class="video-section">
-            <h2>Video de Introducción</h2>
-
-            <iframe
-                src="https://www.youtube.com/embed/2RcgfyuBlz8"
-                allowfullscreen>
-            </iframe>
+        <div class="card">
+          <img
+            src="https://resala-academy.com/wp-content/uploads/2023/04/Arabic-Course-Online-BG-1.jpg"
+            alt="Profesor Árabe"
+          />
+          <div class="card-content">
+            <h2>Clases Online</h2>
+            <p>
+              Clases en vivo con profesores nativos y materiales
+              interactivos.<br />
+              👉<a href="reviews.html"> Here </a>
+            </p>
+          </div>
         </div>
 
+        <div class="card">
+          <img
+            src="https://media.istockphoto.com/id/688391228/es/vector/plantilla-de-desintegraci%C3%B3n-de-marruecos.jpg?s=612x612&w=0&k=20&c=upbrVPpFeX_4sNDE6QcizUUrJ7Jq8HPwdGor6rp6pZ4="
+            alt="Cultura Árabe"
+          />
+          <div class="card-content">
+            <h2>Cultura Árabe</h2>
+            <p>
+              Descubre la cultura, tradiciones y comunicación árabe moderna.<br />
+              👉
+              <a href="https://es.wikipedia.org/wiki/Pueblo_%C3%A1rabe">
+                Here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-section">
+        <h2>Video de Introducción</h2>
+
+        <iframe src="https://www.youtube.com/embed/2RcgfyuBlz8" allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2026 Cursos de Idioma Árabe</p>
+    <h1>📚 Cursos de Idiomas</h1>
+
+    <table>
+      <tr>
+        <td>🇸🇦 Árabe</td>
+        <td>Intermedio</td>
+        <td>5 Meses</td>
+        <td>220€</td>
+        <td><button class="btn" id="Inscribirse">Inscribirse</button></td>
+      </tr>
+
+      <tr>
+        <td>🇪🇸 Español</td>
+        <td>Básico</td>
+        <td>3 Meses</td>
+        <td>120€</td>
+        <td><button class="btn" id="Inscribirse">Inscribirse</button></td>
+      </tr>
+
+      <tr>
+        <td>🇬🇧 Inglés</td>
+        <td>Intermedio</td>
+        <td>6 Meses</td>
+        <td>250€</td>
+        <td><button class="btn" id="Inscribirse">Inscribirse</button></td>
+      </tr>
+
+      <tr>
+        <td>🇫🇷 Francés</td>
+        <td>Avanzado</td>
+        <td>8 Meses</td>
+        <td>320€</td>
+        <td><button class="btn" id="Inscribirse">Inscribirse</button></td>
+      </tr>
+
+      <tr>
+        <td>🇩🇪 Alemán</td>
+        <td>Básico</td>
+        <td>4 Meses</td>
+        <td>180€</td>
+        <td><button class="btn" id="Inscribirse">Inscribirse</button></td>
+      </tr>
+    </table>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- BRAND -->
+          <div class="footer-brand">
+            <h2>Arabic Academy</h2>
+            <p>
+              Learn Arabic online with expert teachers, interactive lessons, and
+              flexible schedules.
+            </p>
+          </div>
+
+          <!-- LINKS -->
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cours.html">Courses</a></li>
+              <li><a href="servicios.html">Services</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: info@arabicacademy.com</p>
+            <p>Phone: +34 600 000 000</p>
+            <p>Online Classes Worldwide</p>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+          <p>© 2026 Arabic Academy — All Rights Reserved</p>
+        </div>
+      </div>
+      <script>
+        const button = document.getElementById("Inscribirse");
+        function handleClick(event) {
+          window.location.href = "http://127.0.0.1:5500/contact.html"
+        }
+
+        button.addEventListener("click",handleClick)
+      </script>
     </footer>
-
-</body>
+  </body>
 </html>
-```
-
-## Images à ajouter dans le dossier `img`
-
-* arabe-bg.jpg
-* curso-arabe.jpg
-* profesor-arabe.jpg
-* cultura-arabe.jpg
+``` ## Images à ajouter dans le dossier `img` * arabe-bg.jpg * curso-arabe.jpg *
+profesor-arabe.jpg * cultura-arabe.jpg

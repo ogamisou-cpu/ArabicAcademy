@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
     <style>
 
     body {
@@ -28,8 +30,8 @@
 
 .contacto h1{
     text-align:center;
-    margin-bottom:25px;
-    color:#fbfcff;
+    margin-bottom:20px;
+    color:#0e44e7;
     font-size:35px;
 }
 
@@ -74,9 +76,122 @@
     background:#06245e;
     transform:scale(1.03);
 }
+
+/* FOOTER */
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 50px 0 15px;
+  margin-top: 50px;
+}
+
+/* FOOTER CONTENT */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* SECTIONS */
+.footer-brand,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* BRAND TITLE */
+.footer-brand h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #60a5fa;
+}
+
+/* TEXT */
+.footer-brand p,
+.footer-contact p,
+.footer-links a {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* SECTION TITLES */
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* LINKS */
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+}
     </style>
 </head>
 <body>
+
+    <!-- HEADER -->
+  <header>
+    <div class="container">
+
+      <div class="logo">
+        Arabic Academy
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="active" className="home"><a href="index.html">Home</a></li>
+          <li className="courses"><a href="#courses">Courses</a></li>
+          <li className="services"><a href="servicios.html">Services</a></li>
+          <li className="why-us"><a href="https://www.amazingtalker.es/tutors/arabic?city=es_spain_bilbao_san_sebastian">Why Us</a></li>
+          <li className="testimonials"><a href="#testimonials">Reviews</a></li>
+          <li className="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
      <section id="contacto">
     <div class="container">
       <div class="contacto">
@@ -92,5 +207,52 @@
       </div>
     </div>
   </section>
+
+  
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- BRAND -->
+      <div class="footer-brand">
+        <h2>Arabic Academy</h2>
+        <p>
+          Learn Arabic online with expert teachers,
+          interactive lessons, and flexible schedules.
+        </p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: info@arabicacademy.com</p>
+        <p>Phone: +34 600 000 000</p>
+        <p>Online Classes Worldwide</p>
+      </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <p>
+        © 2026 Arabic Academy — All Rights Reserved
+      </p>
+    </div>
+
+  </div>
+
+
+  </footer>
 </body>
 </html>
