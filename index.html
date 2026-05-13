@@ -1,343 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Arabic Academy</title>
-
-  <!-- GOOGLE FONT -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Academy - Learn Arabic Online</title>
+  <meta name="description" content="Learn Arabic online with expert teachers, interactive lessons, and flexible schedules. Join 500+ students worldwide.">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="container">
-
-      <div class="logo">
-        Arabic Academy
-      </div>
-
-      <nav class="nav">
-        <ul class="nav-links">
-          <li class="active" className="home"><a href="index.html">Home</a></li>
-          <li className="courses"><a href="cours.html">Courses</a></li>
-          <li className="services"><a href="servicios.html">Services</a></li>
-          <li className="why-us"><a href="https://www.amazingtalker.es/tutors/arabic?city=es_spain_bilbao_san_sebastian">Why Us</a></li>
-          <li className="testimonials"><a href="reviews.html">Reviews</a></li>
-          <li className="contact"><a href="contact.html">Contact</a></li>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#1575;</span>
+        <span>Arabic Academy</span>
+      </a>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- Hero Section -->
   <section class="hero">
-
-    <div class="hero-content">
-
-      <h1>Learn Arabic Online With Expert Teachers</h1>
-
-      <p class="hero-text">
-        Join our academy and start speaking Arabic with interactive online classes,
-        professional tutors, and flexible schedules.
-      </p>
-
-      <a href="servicios.html" class="hero-btn">
-        Start Learning
-      </a>
-
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Master Arabic with Expert Teachers</h1>
+        <p>Join our academy and start speaking Arabic with interactive online classes, professional tutors, and flexible schedules designed for your success.</p>
+        <div class="hero-buttons">
+          <a href="courses.html" class="btn btn-primary">Start Learning</a>
+          <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Students learning Arabic online" loading="lazy">
+      </div>
     </div>
-
   </section>
 
-    <!-- STATS -->
-<section class="stats">
-
-  <div class="container stats-container">
-
-    <div class="stat-card">
-      <h3>500+</h3>
-      <p>Students</p>
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Students</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Expert Teachers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Courses</span>
+      </div>
     </div>
+  </section>
 
-    <div class="stat-card">
-      <h3>20+</h3>
-      <p>Teachers</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>15+</h3>
-      <p>Countries</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>10+</h3>
-      <p>Courses</p>
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- COURSES -->
-  <section id="courses">
-
+  <!-- Courses Preview Section -->
+  <section class="section">
     <div class="container">
-
-      <h2>Our Courses</h2>
-
-      <div class="cards">
-
-        <div class="card">
+      <div class="section-header">
+        <h2>Our Courses</h2>
+        <p>Structured programs designed for every learning level</p>
+      </div>
+      
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">&#1571;</div>
           <h3>Beginner Arabic</h3>
-
-          <p>
-            Learn the Arabic alphabet, pronunciation,
-            grammar, and daily conversation basics.
-          </p>
-        </div>
-
-        <div class="card">
+          <p>Learn the Arabic alphabet, pronunciation, grammar, and daily conversation basics.</p>
+          <a href="courses.html" class="card-link">Learn more</a>
+        </article>
+        
+        <article class="card">
+          <div class="card-icon">&#1576;</div>
           <h3>Business Arabic</h3>
-
-          <p>
-            Improve your Arabic communication for work,
-            business meetings, and professional situations.
-          </p>
-        </div>
-
-        <div class="card">
+          <p>Improve your Arabic communication for work, business meetings, and professional situations.</p>
+          <a href="courses.html" class="card-link">Learn more</a>
+        </article>
+        
+        <article class="card">
+          <div class="card-icon">&#1578;</div>
           <h3>Quranic Arabic</h3>
-
-          <p>
-            Understand Quranic vocabulary and improve your
-            reading and comprehension skills.
-          </p>
-        </div>
-
+          <p>Understand Quranic vocabulary and improve your reading and comprehension skills.</p>
+          <a href="courses.html" class="card-link">Learn more</a>
+        </article>
       </div>
-
     </div>
-
   </section>
 
-  <!-- WHY US -->
-  <section id="why-us" class="why-us">
-
+  <!-- Why Us Section -->
+  <section class="section section-alt">
     <div class="container">
-
-      <h2>Why Choose Arabic Academy?</h2>
-
-      <div class="cards">
-
-        <div class="card">
+      <div class="section-header">
+        <h2>Why Choose Arabic Academy?</h2>
+        <p>Experience the difference with our proven teaching methodology</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+          </div>
           <h3>Live Online Classes</h3>
-
-          <p>
-            Learn directly with experienced Arabic teachers
-            through interactive online lessons.
-          </p>
+          <p>Learn directly with experienced Arabic teachers through interactive online lessons.</p>
         </div>
-
-        <div class="card">
+        
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
           <h3>Flexible Schedule</h3>
-
-          <p>
-            Study from anywhere and choose class times
-            that match your routine.
-          </p>
+          <p>Study from anywhere and choose class times that match your routine.</p>
         </div>
-
-        <div class="card">
+        
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
           <h3>Certificates</h3>
-
-          <p>
-            Receive a certificate after successfully
-            completing your course.
-          </p>
+          <p>Receive a certificate after successfully completing your course.</p>
         </div>
-
+        
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3>Native Teachers</h3>
+          <p>Learn from native Arabic speakers with years of teaching experience.</p>
+        </div>
       </div>
-
     </div>
-
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="testimonials">
-
+  <!-- Testimonials Preview -->
+  <section class="section">
     <div class="container">
-
-      <h2>What Our Students Say</h2>
-
-      <div class="cards">
-
-        <div class="card">
-          <p>
-            "Amazing teachers and very organized lessons.
-            I can finally speak Arabic confidently."
-          </p>
-
-          <h4>- Sarah</h4>
-        </div>
-
-        <div class="card">
-          <p>
-            "Professional academy with friendly tutors.
-            The online classes are very interactive."
-          </p>
-
-          <h4>- Ahmed</h4>
-        </div>
-
-        <div class="card">
-          <p>
-            "I improved my Arabic reading skills in just
-            a few months. Highly recommended."
-          </p>
-
-          <h4>- Maria</h4>
-        </div>
-
+      <div class="section-header">
+        <h2>What Our Students Say</h2>
+        <p>Join hundreds of satisfied learners</p>
       </div>
-
+      
+      <div class="testimonials-grid">
+        <blockquote class="testimonial">
+          <p>"Amazing teachers and very organized lessons. I can finally speak Arabic confidently."</p>
+          <footer>
+            <strong>Sarah M.</strong>
+            <span>United Kingdom</span>
+          </footer>
+        </blockquote>
+        
+        <blockquote class="testimonial">
+          <p>"Professional academy with friendly tutors. The online classes are very interactive."</p>
+          <footer>
+            <strong>Ahmed K.</strong>
+            <span>Germany</span>
+          </footer>
+        </blockquote>
+        
+        <blockquote class="testimonial">
+          <p>"I improved my Arabic reading skills in just a few months. Highly recommended."</p>
+          <footer>
+            <strong>Maria L.</strong>
+            <span>Spain</span>
+          </footer>
+        </blockquote>
+      </div>
+      
+      <div class="section-cta">
+        <a href="reviews.html" class="btn btn-secondary">Read More Reviews</a>
+      </div>
     </div>
-
   </section>
 
-  <!-- GALLERY -->
-  <section class="gallery">
-
-    <div class="container">
-
-      <h2>Our Online Classes</h2>
-
-      <div class="gallery-grid">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Students learning">
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CTA -->
+  <!-- CTA Section -->
   <section class="cta">
-
-    <div class="container">
-
-      <h2>Ready To Start Learning Arabic?</h2>
-
-      <p>
-        Join hundreds of students learning Arabic online today.
-      </p>
-
-      <a href="reviews.html" class="hero-btn">
-        Join Now
-      </a>
-
+    <div class="container cta-content">
+      <h2>Ready to Start Learning Arabic?</h2>
+      <p>Join hundreds of students learning Arabic online today.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Get Started Free</a>
     </div>
-
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <!-- BRAND -->
-      <div class="footer-brand">
-        <h2>Arabic Academy</h2>
-        <p>
-          Learn Arabic online with expert teachers,
-          interactive lessons, and flexible schedules.
-        </p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">&#1575;</span>
+            <span>Arabic Academy</span>
+          </a>
+          <p>Learn Arabic online with expert teachers, interactive lessons, and flexible schedules.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html">Beginner Arabic</a></li>
+            <li><a href="courses.html">Business Arabic</a></li>
+            <li><a href="courses.html">Quranic Arabic</a></li>
+            <li><a href="courses.html">Conversation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Email: info@arabicacademy.com</p>
+          <p>Phone: +34 600 000 000</p>
+          <p>Online Classes Worldwide</p>
+          
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <!-- LINKS -->
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="socials.html">Sociales</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="footer-contact">
-        <h3>Contact</h3>
-        <p>Email: info@arabicacademy.com</p>
-        <p>Phone: +34 600 000 000</p>
-        <p>Online Classes Worldwide</p>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arabic Academy. All Rights Reserved.</p>
       </div>
     </div>
-     <div class="social">
+  </footer>
 
-<a class="fb" href="https://facebook.com" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-
-<a class="ig" href="https://instagram.com" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a class="yt" href="https://youtube.com" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
-
-<a class="tt" href="https://tiktok.com" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-
-<a class="x" href="https://x.com" target="_blank">
-<i class="fab fa-x-twitter"></i>
-</a>
-
-<a class="li" href="https://linkedin.com" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-
-<a class="tg" href="https://telegram.org" target="_blank">
-<i class="fab fa-telegram-plane"></i>
-</a>
-
-<a class="wp" href="https://whatsapp.com" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<a class="sc" href="https://snapchat.com" target="_blank">
-<i class="fab fa-snapchat-ghost"></i>
-</a>
-
-<a class="dc" href="https://discord.com" target="_blank">
-<i class="fab fa-discord"></i>
-</a>
-
-</div>
-    <!-- BOTTOM -->
-    <div class="footer-bottom">
-      <p>
-        © 2026 Arabic Academy — All Rights Reserved
-      </p>
-    </div>
-
-  </div>
-
-</footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
